@@ -1,0 +1,63 @@
+body {
+    background-color:linen;
+}
+
+.titolo {
+    text-align: center;
+    color: #55828B
+}
+
+table {
+    margin: auto;
+    margin-top: 30px;
+    width: 40%;
+    text-align: center;
+    border: 2px #55828B solid;
+    border-radius: 10px;
+    font-size: large;
+    border-collapse: collapse;
+
+}
+
+.table__head {
+    font-size: larger;
+    background-color: #55828B;
+    border: 0px;  
+}
+
+.table__head th {
+    padding: 5px 10px;
+    border-bottom: 2px #55828B solid;
+    color: white;
+}
+
+.table__a {
+    text-decoration: none;
+    color: #628395;;
+}
+
+.table__stripes:hover {
+    background-color: #55828B;
+    color: white;
+}
+
+.table__stripes:hover a {
+    color: white;
+}
+
+.table__stripes td {
+    padding: 10px;
+}
+
+.table__id a {
+    background-color: #55828B;
+    padding: 5px 10px;
+    border-radius: 100%;
+    color: white;
+}
+
+.contact__img {
+    width: 200px;
+    border-radius: 20px;
+    display: block;
+}
