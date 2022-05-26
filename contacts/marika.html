@@ -5,20 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Rubrica | Marika</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/styles/contacts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
 </head>
-<body class="container">
+<body> 
     <header>
-        <img class="contact__img" src="../images/marika.png" alt="foto Marika">
-        <div class="info">
-            <h1 class="titolo">Marika Fabiani</h1>        
-            <p>Front-End Developer | Bitrock</h3>
-            <p><a target="_blank" href="https://www.linkedin.com/in/marika-fabiani-93a415186/">Sito personale</a></p>
-        </div>
+        <h2> Rubrica's Marika</h2>
+        <ul class="menu">
+            <li><a href="index.html">Tabella</a></li>
+            <li><a href="#">Cards</a></li>
+        </ul>
     </header>
+    <div class="container">
+    <main>
+        <div class="flex__image">
+            <img class="contact__img" src="../images/marika.png" alt="foto Marika">
+        </div>
+        <div class="flex__info">
+            <h1 class="titolo">Marika Fabiani</h1>        
+            <p>Junior Front-End Developer | Bitrock</p>
+            <button class="contact__button"><a class="contact__personale" target="_blank" href="https://www.linkedin.com/in/marika-fabiani-93a415186/">Sito personale</a></button>
+            <button class="contact__button"><a class="contact__personale" target="_blank" href="https://bitrock.it/">Sito aziendale</a></button>
+        </div>
+    </main>
     <aside>
         <h3>Informazioni personali</h3>
-        <ul>
+        <ul class="contact__list">
             <li>Compleanno: 29/11/1999</li>
             <li>Indirizzo: Trento</li>
             <li>Numero di telefono: 3652563256</li>
@@ -26,24 +38,24 @@
         </ul>
     </aside>
     <section>
-        <h3>Bio</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum, saepe qui rem ut odit quod, eaque explicabo, neque et dolore atque natus consequuntur molestiae quia laboriosam! Fuga, suscipit voluptas.</p>
-    </section>
-    <section>
-        <h3>Hobby</h3>
-        <ul>
-            <li>Serie tv</li>
-            <li>Leggere</li>
-            <li>Camminare</li>
+        <h3 class="contact__smtitol">Bio</h3>
+        <p class="contact__bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum, saepe qui rem ut odit quod, eaque explicabo, neque et dolore atque natus consequuntur molestiae quia laboriosam! Fuga, suscipit voluptas.</p>
+        <h3 class="contact__smtitol">Hobby</h3>
+        <ul class="contact__hobby">
+            <li><i class="fa-solid fa-tv"></i> Serie tv</li>
+            <li><i class="fa-solid fa-book"></i> Lettura</li>
+            <li><i class="fa-solid fa-person-walking"></i> Camminare</li>
         </ul>
-    </section>
-    <section>
-        <h3>Colore preferito</h3>
+        <h3 class="contact__smtitol">Colore preferito</h3>
         <input type="color">
+        <h3 class="contact__smtitol">Video preferito</h3>
+        <div class="contact__video">
+            <iframe  width="350" height="170" src="https://www.youtube.com/embed/TIluCkpfuhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </section>
-    <section>
-        <h3>Video preferito</h3>
-        <iframe width="350" height="170" src="https://www.youtube.com/embed/TIluCkpfuhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+    </div>
+    <footer>
+        <p>Saluti!</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,600;1,700&display=swap');
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color:#faf0e6;
+}
+
+.container__table {
+    margin: 0 auto;
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 80% auto;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #55828B;
+    color: white;
+    align-items: center;
+    padding: 5px 40px;
+}
+
+.menu li {
+    text-decoration: none;
+    display: inline-block;
+    height: 100%;
+    margin-left: 0px;
+    padding: 25px;
+    transition: background-color 0.4s linear;
+}
+
+.menu li:hover {
+    background-color: #365359;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.titolo {
+    text-align: center;
+    color: #55828B;
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+
+main {
+    grid-area: main;
+}
+
+table {
+    margin: auto;
+    margin-top: 20px;
+    width: 40%;
+    text-align: center;
+    border: 2px #55828B solid;
+    border-radius: 10px;
+    font-size: 15px;
+    border-collapse: collapse;
+
+}
+
+.table__head {
+    font-size: larger;
+    background-color: #55828B;
+    border: 0px;  
+}
+
+.table__head th {
+    padding: 5px 5px;
+    border-bottom: 2px #55828B solid;
+    color: white;
+}
+
+.table__stripes:hover {
+    background-color: #55828B;
+    color: white;
+}
+
+.table__stripes:hover a {
+    color: white;
+}
+
+.table__stripes td {
+    padding: 5px;
+}
+
+.table__a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    background-color: #55828B;
+    display: inline-block;
+    border-radius: 50%;
+    color: white;
+}
+
+.table__id {
+    justify-content: center;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(85, 130, 139, 0.4);
+}
+
+footer {
+    grid-area: footer;
+    background-color: #365359;
+    text-align: center;
+    
+}
+
+footer p {
+    color: white;
+    font-size: large;
+    font-weight: 200;
+}
