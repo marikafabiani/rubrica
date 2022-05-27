@@ -26,14 +26,15 @@ body {
 }
 
 header {
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     gap: 30px;
     background-color: #55828B;
     color: white;
     align-items: center;
-    padding: 5px 40px;
+    padding: 5px 35px;
+    padding-right: 25px;
 }
 
 .menu li {
@@ -41,7 +42,7 @@ header {
     display: inline-block;
     height: 100%;
     margin-left: 0px;
-    padding: 25px;
+    padding: 19px;
     transition: background-color 0.4s linear;
 }
 
@@ -52,7 +53,6 @@ header {
 .menu li a{
     text-decoration: none;
     color: white;
-    font-size: large;
 }
 
 main {
@@ -173,6 +173,7 @@ section {
 }
 
 footer {
+    
     background-color: #365359;
     height: 70px;
     display: flex;
@@ -184,4 +185,19 @@ footer p {
     font-size: large;
     font-weight: 200;
     margin-bottom: 0px;
+}
+
+@media (prefers-color-scheme:dark) {
+    body {
+        background-color: #2d2e2e;
+    }
+    .flex__info p {
+        color: white;
+    }
+    .contact__hobby li {
+        color: white;
+    }
+    .contact__bio {
+        color: white;
+    }
 }

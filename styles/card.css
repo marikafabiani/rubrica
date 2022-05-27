@@ -53,72 +53,56 @@ header {
     color: white;
 }
 
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10% repeat(3, 100px);
+    gap: 20px;
+}
+
 .titolo {
+    grid-column: 1/ 7;
     text-align: center;
     color: #55828B;
     font-family: 'Lora', serif;
     font-style: italic;
 }
 
-main {
-    grid-area: main;
-}
 
-table {
-    margin: auto;
-    margin-top: 20px;
-    width: 40%;
-    text-align: center;
-    border: 2px #55828B solid;
-    border-radius: 10px;
-    font-size: 15px;
-    border-collapse: collapse;
-
-}
-
-.table__head {
-    font-size: larger;
+.card {
     background-color: #55828B;
-    border: 0px;  
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease-in;
 }
 
-.table__head th {
-    padding: 5px 5px;
-    border-bottom: 2px #55828B solid;
+.card:hover{
+    background-color: #365359;
+}
+
+.card > p {
+    margin-left: 10px;
     color: white;
 }
 
-.table__stripes:hover {
-    background-color: #55828B;
-    color: white;
+.card-1{
+    grid-column-start: 2;
 }
 
-.table__stripes:hover a {
-    color: white;
+.card-5 {
+    grid-column-start: 2;
 }
 
-.table__stripes td {
-    padding: 5px;
-}
-
-.table__a {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-decoration: none;
-    background-color: #55828B;
-    display: inline-block;
+.card__img {
+    opacity: 1;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    color: white;
 }
 
-.table__id {
-    justify-content: center;
-}
-
-tr:nth-child(even) {
-    background-color: rgb(85, 130, 139, 0.4);
-}
 
 footer {
     grid-area: footer;
