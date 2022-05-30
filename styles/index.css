@@ -143,3 +143,15 @@ footer p {
         color: white;
     }
 }
+
+/* * TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container__table {
+        grid-template-columns: 50px auto 50px;
+    }
+    
+    .table {
+        width: 70%;
+    }
+}
