@@ -1,0 +1,46 @@
+{
+    "contacts": [
+    {
+    "id": 1,
+    "name": "Marika",
+    "surname": "Fabiani",
+    "page": "marika.html"
+    },
+    {
+    "id": 2,
+    "name": "Alessio",
+    "surname": "Verdi",
+    "page": "#"
+    },
+    {
+    "id": 3,
+    "name": "Giovanni",
+    "surname": "Rossi",
+    "page": "#"
+    },
+    {
+    "id": 4,
+    "name": "Diego",
+    "surname": "Gialli",
+    "page": "#"
+    },
+    {
+    "id": 5,
+    "name": "Mario",
+    "surname": "Azzurri",
+    "page": "#"
+    },
+    {
+    "id": 6,
+    "name": "Laura",
+    "surname": "Arancioni",
+    "page": "#"
+    },
+    {
+    "id": 7,
+    "name": "Marta",
+    "surname": "Neri",
+    "page": "#"
+    }
+    ]
+}
