@@ -1,5 +1,5 @@
 {
-    "contacts": [
+  "contacts": [
     {
     "id": 1,
     "name": "Marika",
@@ -42,5 +42,5 @@
     "surname": "Neri",
     "page": "#"
     }
-    ]
+  ]
 }

@@ -34,20 +34,14 @@ let deleteItem = async id => {
     }
 };
 
- // const response = await fetch("http://localhost:3000/contacts");
-// const data = await response.json();
-// let trash = document.q("i");
-// trash.setAttribute("class","trash")
-// console.log(table);
-// if(trash) {
-//   console.log(trash[0])
-// trash[0].addEventListener("click", console.log("clicked"))
-
 function deletePerson() {
   document.addEventListener('click',function(event){
     if (event.target.classList.contains('fa-trash')){
       let row = event.target.parentNode.parentNode;
+      console.log(row);
       row.parentNode.removeChild(row);
+      let id = row.getElementsByClassName("table__id")[0].id;
+      deleteItem(id)
     }
    })
 }
