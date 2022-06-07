@@ -18,6 +18,14 @@
 </header>
 <main>
   <h1 class="page__title">Tabella</h1>
+    <div class="table__add">
+        <div>Aggiungi contatto</div>
+        <form action="#" method="post" id="add_contact">
+            <input type="text" placeholder="Nome" name="name" id="name">
+            <input type="text" placeholder="Cognome"name="surname" id="surname">
+            <button type="submit" form="add_contact" value="contact">Aggiungi</button> 
+        </form>
+    </div>
   <table class="table">
     <thead>
     <tr class="table__head">
@@ -29,6 +37,7 @@
     </thead>
     <tbody id="contacts-rows-container"></tbody>
   </table>
+    
 </main>
 <footer>
   <p>Saluti!</p>

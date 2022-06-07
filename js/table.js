@@ -46,3 +46,7 @@ async function initTable() {
   // 3. aggiungere il listener per il tasto delete
   addDeleteContactListener();
 }
+
+function addContactToTable() {
+  
+}

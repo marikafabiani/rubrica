@@ -36,3 +36,15 @@ async function deleteContact(id) {
     throw Error('Error on deleteContact');
   }
 }
+
+async function addContact(id, name, surname) {
+  const res = await fetch(`${ baseUrl }`, {
+    header: {
+      'Content-Type': 'application/json',
+    },
+    method: 'POST',
+  });
+  if(!res.ok) {
+    alert("Error add contact");
+  }
+}

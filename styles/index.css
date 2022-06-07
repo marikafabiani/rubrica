@@ -126,6 +126,50 @@ tr:nth-child(even) {
     background-color: rgb(85, 130, 139, 0.4);
 }
 
+.row_delete {
+    cursor: pointer;
+}
+
+.table__add {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border: 2px solid #55828B;
+    border-radius: 20px;
+}
+
+.table__add > div {
+    margin: 0px 20px;
+}
+
+.table__add form {
+    padding: 10px 0px;
+    margin: 0px 20px;
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table__add form input {
+    border-radius: 20px;
+    border: 2px solid #55828B;
+}
+
+.table__add button {
+    background-color: #55828B;
+    background-color: #55828B;
+    color: white;
+    padding: 3px 5px;
+    border: 0px;
+    border-radius: 20px;
+    font-family: inherit;
+    transition: background-color 0.2s ease-in;
+}
+
+.table__add button:hover {
+    background-color: #365359;
+}
+
 footer {
     grid-area: footer;
     background-color: #365359;
