@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rubrica's Marika</title>
-    <link rel="stylesheet" type="text/css" href="/styles/index.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubrica's Marika</title>
+  <link rel="stylesheet" type="text/css" href="/styles/index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
 </head>
 <body class="container__table">
-    <header>
-        <h2><a id="header__title" href="index.html"> Rubrica's Marika </a></h2>
-        <ul class="menu">
-            <li><a href="index.html">Tabella</a></li>
-            <li><a href="views/card.html">Cards</a></li>
-        </ul>
-    </header>
-    <main>
-        <h1 class="page__title">Tabella</h1>
-        <table class="table">
-            <thead>
-                <tr class="table__head">
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Cognome</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-    </main>
-    <footer>
-        <p>Saluti!</p>
-    </footer>
-    <script type="text/javascript" src="js/script.js"></script>
+<header>
+  <h2><a id="header__title" href="index.html"> Rubrica's Marika </a></h2>
+  <ul class="menu">
+    <li><a href="index.html">Tabella</a></li>
+    <li><a href="views/card.html">Cards</a></li>
+  </ul>
+</header>
+<main>
+  <h1 class="page__title">Tabella</h1>
+  <table class="table">
+    <thead>
+    <tr class="table__head">
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Cognome</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody id="contacts-rows-container"></tbody>
+  </table>
+</main>
+<footer>
+  <p>Saluti!</p>
+</footer>
+<script type="text/javascript" src="js/api.js"></script>
+<script type="text/javascript" src="js/table.js"></script>
+<script>
+  initTable();
+</script>
 </body>
 </html>
