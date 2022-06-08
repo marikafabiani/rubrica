@@ -37,14 +37,19 @@ async function deleteContact(id) {
   }
 }
 
-async function addContact(id, name, surname) {
-  const res = await fetch(`${ baseUrl }`, {
-    header: {
-      'Content-Type': 'application/json',
-    },
-    method: 'POST',
-  });
-  if(!res.ok) {
-    alert("Error add contact");
+async function addContactToList(data) {
+  try {
+    const response = await fetch(baseUrl, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+    return response.json();
+  } catch(ex) {
+    alert('Error on adding contact to contact list');
+    console.error('Error on addContact: ', ex);
+    return [];
   }
 }
