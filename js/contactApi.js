@@ -1,6 +1,6 @@
 const baseUrl = 'http://localhost:3000/contacts';
 
-async function getContactList() {
+async function contactApiServiceGetContactList() {
   try {
     const response = await fetch(baseUrl);
     return response.json();
@@ -11,7 +11,7 @@ async function getContactList() {
   }
 }
 
-async function getFilteredContactListBySurname(surname) {
+async function contactApiServiceGetFilteredContactListBySurname(surname) {
   try {
     const response = await fetch(`${ baseUrl }?q=${ surname }`);
     return response.json();
@@ -23,7 +23,7 @@ async function getFilteredContactListBySurname(surname) {
 }
 
 
-async function deleteContact(id) {
+async function contactApiServiceDeleteContact(id) {
   const res = await fetch(`${ baseUrl }/${ id }`, {
     header: {
       'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ async function deleteContact(id) {
   }
 }
 
-async function addContactToList(data) {
+async function contactApiServiceAddContact(data) {
   try {
     const response = await fetch(baseUrl, {
       headers: {
@@ -46,10 +46,21 @@ async function addContactToList(data) {
       method: 'POST',
       body: JSON.stringify(data),
     });
+
+    if(!response.ok) {
+      throw Error('Error on addContact');
+    }
     return response.json();
   } catch(ex) {
     alert('Error on adding contact to contact list');
     console.error('Error on addContact: ', ex);
-    return [];
+    return null;
   }
 }
+
+const contactApiService = {
+  add: contactApiServiceAddContact,
+  delete: contactApiServiceDeleteContact,
+  getAll: contactApiServiceGetContactList,
+  getFilteredBySurname: contactApiServiceGetFilteredContactListBySurname,
+};

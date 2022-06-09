@@ -1,16 +1,34 @@
 {
   "contacts": [
     {
-      "id": 1,
       "name": "Marika",
       "surname": "Fabiani",
-      "page": "marika.html"
+      "id": 1
     },
     {
       "id": 2,
       "name": "Alessio",
       "surname": "Verdi",
-      "page": "#"
+      "bio": "Lorem ipsum.......",
+      "contacts": [
+        {
+          "label": "Compleanno",
+          "value": "1999-11-29",
+          "type": "date"
+        },
+        {
+          "label": "Indirizzo",
+          "value": "Trento",
+          "googleMapsUrl": "https://maps.google.com/17,123,3",
+          "type": "map"
+        }
+      ],
+      "hobbies": [
+        {
+          "name": "Calcio",
+          "icon": "fa-soccer"
+        }
+      ]
     },
     {
       "id": 3,
@@ -25,9 +43,10 @@
       "page": "#"
     },
     {
-      "id": "6",
-      "name": "Gabriele",
-      "surname": "Chiari"
+      "name": "Daniel",
+      "surname": "Zotti",
+      "age": 123,
+      "id": 7
     }
   ]
 }
