@@ -79,7 +79,6 @@ table {
     font-size: 15px;
     border-collapse: collapse;
     width: 40%
-
 }
 
 .table__head {
@@ -126,8 +125,10 @@ tr:nth-child(even) {
     background-color: rgb(85, 130, 139, 0.4);
 }
 
-.row_delete {
+.btn-transparent {
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 #search_contact {
@@ -145,7 +146,7 @@ tr:nth-child(even) {
 .table__add {
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 500px;
     border: 2px solid #55828B;
     border-radius: 20px;
 }
@@ -165,7 +166,6 @@ tr:nth-child(even) {
 
 .table__add form input {
     border: 2px solid #55828B;
-    /* width: 100px; */
 }
 
 .table__add button {
@@ -199,10 +199,19 @@ footer p {
 /* * DARK MODE */
 
 @media (prefers-color-scheme:dark) {
-    body {
+    .container__table {
         background-color: #2d2e2e;
     }
     .table__stripes td {
+        color: white;
+    }
+    .table__add > div {
+        color: white;
+    }
+    #search_contact span{
+        color: white;
+    }
+    .btn-transparent i {
         color: white;
     }
 }
@@ -213,15 +222,15 @@ footer p {
     .container__table {
         grid-template-columns: 50px auto 50px;
     }
-    
-    .table {
-        width: 70%;
+
+    .table__add {
+        width: 40%;
     }
+
     .table__add form {
         flex-direction: column;
     }
-    #add_surname {
-        margin-top:5px;
+    #form-contact-add input{
         margin-bottom:5px;
     }
 }
@@ -230,8 +239,13 @@ footer p {
     .table__add form {
         flex-direction: column;
     }
-    #add_surname {
-        margin-top:5px;
+
+    .table__add {
+        width: 40%;
+    }
+
+    #form-contact-add input {
         margin-bottom:5px;
+
     }
 }
