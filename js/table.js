@@ -53,12 +53,12 @@ function addContact() {
     event.preventDefault();
     const lastRow = document.querySelector('#contacts-rows-container').rows.length+1;
     // console.log(lastRow);
-    let contact_id = lastRow+1;
-    let contact_name = document.querySelector("#add_name").value;
-    let contact_surname = document.querySelector("#add_surname").value;
-    let newContactObject = {"id": `${contact_id}`, "name": `${contact_name}`, "surname": `${contact_surname}`};
+    let contactId = lastRow+1;
+    let contactName = document.querySelector("#add_name").value;
+    let contactSurname = document.querySelector("#add_surname").value;
+    let newContactObject = {"id": `${contactId}`, "name": `${contactName}`, "surname": `${contactSurname}`};
     addContactToList(newContactObject);
-    let newContactArray = [{"id": `${contact_id}`, "name": `${contact_name}`, "surname": `${contact_surname}`}];
+    let newContactArray = [{"id": `${contactId}`, "name": `${contactName}`, "surname": `${contactSurname}`}];
     addTableRows(newContactArray);
   });
-};
+}
