@@ -18,14 +18,18 @@
 </header>
 <main>
   <h1 class="page__title">Tabella</h1>
-    <div class="table__add">
-        <div>Aggiungi contatto</div>
-        <form method="GET" id="add_contact">
-            <input type="text" placeholder="Nome" name="name" id="add_name">
-            <input type="text" placeholder="Cognome"name="surname" id="add_surname">
-            <button type="submit" form="add_contact" value="contact" id="add_button">Aggiungi</button> 
-        </form>
-    </div>
+  <div id="search_contact">
+    <div>Cerca</div>
+    <input type="text" name="search_contact" id="search_input" placeholder="Cognome">
+  </div>
+  <div class="table__add">
+      <div>Aggiungi contatto</div>
+      <form method="GET" id="add_contact">
+          <input type="text" placeholder="Nome" name="name" id="add_name">
+          <input type="text" placeholder="Cognome" name="surname" id="add_surname">
+          <button type="submit" form="add_contact" value="contact" id="add_button">Aggiungi</button> 
+      </form>
+  </div>
   <table class="table">
     <thead>
     <tr class="table__head">

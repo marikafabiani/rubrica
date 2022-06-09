@@ -130,6 +130,18 @@ tr:nth-child(even) {
     cursor: pointer;
 }
 
+#search_contact {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search_contact input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .table__add {
     margin-left: auto;
     margin-right: auto;
@@ -204,5 +216,22 @@ footer p {
     
     .table {
         width: 70%;
+    }
+    .table__add form {
+        flex-direction: column;
+    }
+    #add_surname {
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .table__add form {
+        flex-direction: column;
+    }
+    #add_surname {
+        margin-top:5px;
+        margin-bottom:5px;
     }
 }
