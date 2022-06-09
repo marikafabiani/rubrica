@@ -56,18 +56,9 @@ function addContact() {
     let contact_id = lastRow+1;
     let contact_name = document.querySelector("#add_name").value;
     let contact_surname = document.querySelector("#add_surname").value;
-    let newContact = {"id": `${contact_id}`, "name": `${contact_name}`, "surname": `${contact_surname}`};
-    addContactToList(newContact);
-    const tbody = document.querySelector('#contacts-rows-container');
-    tbody.innerHTML += `
-      <tr class="table__stripes"> 
-        <td class="table__id row_id" id="contact_${ contact_id }"}>
-            <a class="table__a" href="/contacts/#"> ${ contact_id } </a>
-        </td>
-        <td class="row_name"> ${ contact_name } </td>
-        <td class="row_surname"> ${ contact_surname } </td>
-        <td class="row_delete"><i class="fa fa-trash"></i></td>
-      </tr>`;
-    
+    let newContactObject = {"id": `${contact_id}`, "name": `${contact_name}`, "surname": `${contact_surname}`};
+    addContactToList(newContactObject);
+    let newContactArray = [{"id": `${contact_id}`, "name": `${contact_name}`, "surname": `${contact_surname}`}];
+    addTableRows(newContactArray);
   });
 };

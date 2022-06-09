@@ -13,7 +13,7 @@ async function getContactList() {
 
 async function getFilteredContactListBySurname(surname) {
   try {
-    const response = await fetch(`${ baseUrl }?surname_like=${ surname }`);
+    const response = await fetch(`${ baseUrl }?q=${ surname }`);
     return response.json();
   } catch(ex) {
     alert('Error on retrieving contact list');
