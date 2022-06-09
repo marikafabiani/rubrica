@@ -23,12 +23,12 @@
     <input type="text" name="search_contact" id="search_input" placeholder="Cognome">
   </div>
   <div class="table__add">
-      <div>Aggiungi contatto</div>
-      <form method="GET" id="add_contact">
-          <input type="text" placeholder="Nome" name="name" id="add_name">
-          <input type="text" placeholder="Cognome" name="surname" id="add_surname">
-          <button type="submit" form="add_contact" value="contact" id="add_button">Aggiungi</button> 
-      </form>
+    <div>Aggiungi contatto</div>
+    <form method="GET" id="form-contact-add">
+      <input type="text" placeholder="Nome" name="name">
+      <input type="text" placeholder="Cognome" name="surname">
+      <button type="submit">Aggiungi</button>
+    </form>
   </div>
   <table class="table">
     <thead>
@@ -45,10 +45,10 @@
 <footer>
   <p>Saluti!</p>
 </footer>
-<script type="text/javascript" src="js/api.js"></script>
+<script type="text/javascript" src="js/contactApi.js"></script>
 <script type="text/javascript" src="js/table.js"></script>
 <script>
-  addContact();
+  initAddContactListener();
   initTable();
 </script>
 </body>
