@@ -1,46 +1,116 @@
 {
   "contacts": [
-  {
-  "id": 1,
-  "name": "Marika",
-  "surname": "Fabiani",
-  "page": "marika.html"
-  },
-  {
-  "id": 2,
-  "name": "Alessio",
-  "surname": "Verdi",
-  "page": "#"
-  },
-  {
-  "id": 3,
-  "name": "Giovanni",
-  "surname": "Rossi",
-  "page": "#"
-  },
-  {
-  "id": 4,
-  "name": "Diego",
-  "surname": "Gialli",
-  "page": "#"
-  },
-  {
-  "id": 5,
-  "name": "Mario",
-  "surname": "Azzurri",
-  "page": "#"
-  },
-  {
-  "id": 6,
-  "name": "Laura",
-  "surname": "Arancioni",
-  "page": "#"
-  },
-  {
-  "id": 7,
-  "name": "Marta",
-  "surname": "Neri",
-  "page": "#"
-  }
+    {
+      "id": 1,
+      "name": "Marika",
+      "surname": "Fabiani",
+      "job": "Junior Front-End Developer | Bitrock",
+      "image": "/images/marika.png",
+      "info": {
+        "birthday": "29/11/1999",
+        "address": "Trento",
+        "phone": "3652563256",
+        "email": "marikafabiani63@gmail.com"
+      },
+      "hobbies": [
+        {
+          "icon": "fa-solid fa-tv",
+          "hobby": "Serie TV"
+        },
+        {
+          "icon": "fa-solid fa-book",
+          "hobby": "Lettura"
+        },
+        {
+          "icon": "fa-solid fa-person-walking",
+          "hobby": "Camminare"
+        }
+      ],
+      "color": "#0051ff"
+          
+    },
+    {
+      "id": 2,
+      "name": "Alessio",
+      "surname": "Verdi",
+      "job": "Venditore di auto | Auto Ciao",
+      "image": "https://sysprove.com/wp-content/uploads/2018/11/Faces-400x400px-1_1_22.jpg",
+      "info": {
+        "birthday": "10/07/1995",
+        "address": "Milano",
+        "phone": "3652563256",
+        "email": "aleve@gmail.com"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Giovanni",
+      "surname": "Rossi",
+      "job": "Avvocato",
+      "image": "https://www.sciuker.it/wp-content/uploads/2016/01/Faces-400x400px-1_1.jpg",
+      "info": {
+        "birthday": "23/12/1994",
+        "address": "Trieste",
+        "phone": "3652563256",
+        "email": "gioro@gmai.com"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Diego",
+      "surname": "Gialli",
+      "job": "Data Scientist",
+      "image": "https://siacinformatica.eu/SIACINFORMATICA.EU/wp-content/uploads/2014/10/Faces-400x400px-1_1_28.jpg",
+      "info": {
+        "birthday": "03/04/1993",
+        "address": "Torino",
+        "phone": "3652563256",
+        "email": "diegogialli@gmail.com"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Mario",
+      "surname": "Azzurri",
+      "job": "Venditore di auto | Auto Ciao",
+      "image": "https://www.sciuker.it/wp-content/uploads/2016/01/Faces-400x400px-1_1_07.jpg",
+      "info": {
+        "birthday": "13/04/1996",
+        "address": "Bolzano",
+        "phone": "3652563256",
+        "email": "marioazzurri@gmail.com"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Laura",
+      "surname": "Arancioni",
+      "job": "Professoressa",
+      "image": "http://codex-themes.com/scalia/zaro/wp-content/uploads/2014/12/Faces-400x400px-1_1_29-256x256.jpg",
+      "info": {
+        "birthday": "19/06/1990",
+        "address": "Firenze",
+        "phone": "3652563256",
+        "email": "laurarancioni@gmail.com"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Marta",
+      "surname": "Neri",
+      "job": "Commessa",
+      "image": "https://susicastle.com/wp-content/uploads/2016/01/Faces-400x400px-1_1_09.jpg",
+      "info": {
+        "birthday": "16/10/1998",
+        "address": "Genova",
+        "phone": "3652563256",
+        "email": "martaneri@gmail.com"
+      }
+    },
+    {
+      "name": "Gabriele",
+      "surname": "Chiari",
+      "id": 8
+    }
   ]
 }

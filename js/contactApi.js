@@ -58,9 +58,21 @@ async function contactApiServiceAddContact(data) {
   }
 }
 
+async function contactApiServiceGetContactById(id) {
+  try {
+    const response = await fetch(`${ baseUrl }/${ id }`);
+    return response.json();
+  } catch(ex) {
+    alert(`Error on retrieving contact with id ${ id }`);
+    console.error('Error on getContact: ', ex);
+    return [];
+  }
+}
+
 const contactApiService = {
   add: contactApiServiceAddContact,
   delete: contactApiServiceDeleteContact,
   getAll: contactApiServiceGetContactList,
   getFilteredBySurname: contactApiServiceGetFilteredContactListBySurname,
+  getById: contactApiServiceGetContactById,
 };

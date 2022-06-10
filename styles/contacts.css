@@ -24,6 +24,7 @@ body {
     grid-template-areas: 
         "main main"
         "aside section"
+        "content content"
     ;
     row-gap: 30px;
     column-gap: 50px;
@@ -101,7 +102,7 @@ section {
 }
 
 .contact__image {
-    flex-basis: 290px;
+    flex-basis: 300px;
 }
 
 .contact__info {
@@ -182,6 +183,17 @@ section {
     fill: #0051ff;
 }
 
+content {
+    grid-area: content;
+    text-align: center;
+}
+
+content button {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: larger;
+}
+
 footer {
     background-color: #365359;
     height: 70px;
@@ -210,6 +222,9 @@ footer div {
     .contact__bio {
         color: white;
     }
+    .contact__info h3 {
+        color: white;
+    }
 }
 
 /* * TABLET */
@@ -220,5 +235,13 @@ footer div {
     }
     .contact__image {
         flex-basis: 30%;
+    }
+}
+
+/* * PHONE */
+
+@media screen and (max-width: 768px) {
+    .contact__image {
+        flex-basis: 0px;
     }
 }
