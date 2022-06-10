@@ -60,7 +60,7 @@ header {
 
 main {
     grid-area: main;
-    margin: 0 300px;
+    margin: 0 10%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 15% repeat(3, 100px);
