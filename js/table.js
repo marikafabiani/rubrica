@@ -59,7 +59,7 @@ async function initTable() {
 
 function initAddContactListener() {
   document.querySelector('#form-contact-add').addEventListener('submit', async function(event) {
-    event.preventDefault();
+    event.preventDefault(); // l'evento non si verifica
     const allFormControls = Array.from(event.target.elements);
     const formControls = allFormControls.filter(c => !!c.getAttribute('name'));
 

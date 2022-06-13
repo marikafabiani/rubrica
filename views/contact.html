@@ -17,7 +17,7 @@
             <li><a href="../card.html">Cards</a></li>
         </ul>
     </header>
-    <div class="container" id="view">
+    <div class="container-view" id="view">
     <main>
         <div class="contact__image">
             <img class="contact__img" src="" alt="">
@@ -50,8 +50,77 @@
         </div>
     </section>
     <content>
-        <button class="contact__button"> Modifica </button>
+        <button class="contact__button" id="contact_edit"> Modifica </button>
     </content>
+    </div>
+    <div id="setting">
+        <h1>Modifica</h1>
+        <div id="setContact">
+            <div>
+                <div class="setInput">
+                    <span>Nome</span>
+                    <input type="text" name="nome" >
+                </div>
+                <div class="setInput">
+                    <span>Cognome</span>
+                    <input type="text" name="cognome">
+                </div>
+            </div>
+            <div>
+                <div class="setInput">
+                    <span>Lavoro</span>
+                    <input type="text" name="lavoro">
+                </div>
+                <div class="setInput">
+                    <span>URL Personale</span>
+                    <input type="url" name="urlPersonale">
+                </div>
+                <div class="setInput">
+                    <span>URL aziendale</span>
+                    <input type="url" name="urlAziendale">
+                </div>
+            </div>
+            <div>
+                <div class="setInput">
+                    <span>Compleanno</span>
+                    <input type="date" name="compleanno">
+                </div>
+                <div class="setInput">
+                    <span>Indirizzo</span>
+                    <input type="text" name="indirizzo">
+                </div>
+                <div class="setInput">
+                    <span>Cellulare</span>
+                    <input type="tel" name="cellulare">
+                </div>
+                <div class="setInput">
+                    <span>Email</span>
+                    <input type="email" name="email">
+                </div>
+            </div>
+            <div>
+                <div class="setInput">
+                    <span>Bio</span>
+                    <textarea type="text" name="bio"></textarea>
+                </div>
+                <div class="setInput">
+                    <span>Hobby</span>
+                    <input type="text" name="hobby">
+                </div>
+                <div class="setInput">
+                    <span>Colore preferito</span>
+                    <input type="color" name="colore">
+                </div>
+                <div class="setInput">
+                    <span>Video preferito</span>
+                    <input type="url" name="video">
+                </div>
+            </div>
+        </div>
+        <div class="setButtons">
+            <button type="submit" id="contact_undo"> Indietro </button>
+            <input type="submit" value="Salva" class="contact__button" id="contact_save">
+        </div>
     </div>
     <footer>
         <div>Saluti!</div>

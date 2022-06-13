@@ -69,10 +69,32 @@ async function contactApiServiceGetContactById(id) {
   }
 }
 
+async function contactApiServiceEditContact(id, data) {
+  try {
+    const response = await fetch(`${ baseUrl }/${ id }`, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'PUT',
+      body: JSON.stringify(data),
+    });
+
+    if(!response.ok) {
+      throw Error('Error on EditContact');
+    }
+    return response.json();
+  } catch(ex) {
+    alert('Error on editing contact');
+    console.error('Error on EditContact: ', ex);
+    return null;
+  }
+}
+
 const contactApiService = {
   add: contactApiServiceAddContact,
   delete: contactApiServiceDeleteContact,
   getAll: contactApiServiceGetContactList,
   getFilteredBySurname: contactApiServiceGetFilteredContactListBySurname,
   getById: contactApiServiceGetContactById,
+  edit: contactApiServiceEditContact
 };

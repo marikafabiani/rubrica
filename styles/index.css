@@ -10,7 +10,6 @@ html {
 
 .container__table {
     background-color:#faf0e6;
-    min-height: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
